@@ -1,5 +1,12 @@
   var size = 250;
   var box = document.getElementById("box");
+  var p = document.getElementById("color-identifier");
+  var opaque = 1.0;
+  var colors = ["Blue", "Green", "Red", "Black", "Orange", "Peru", "Aqua", "Lime", "Purple", "Gold"];
+  var i = 5;
+  p.innerHTML = colors[i];
+
+
 box.addEventListener("wheel", function(event){
   if(event.deltaY < 0){
     size = size * 1.25;
@@ -19,13 +26,21 @@ document.getElementById("grow").addEventListener("click", bigger);
 //}); 
 
 
-document.getElementById("blue").addEventListener("click", function(e){
-  console.log(e);
-  box.style.backgroundColor = "blue";
+document.getElementById("color").addEventListener("click", function(){
+  i = Math.floor(Math.random() * 10); 
+  console.log(i);
+  box.style.backgroundColor = colors[i];
+  p.innerHTML = colors[i];
 });
 
-document.getElementById("fade").addEventListener("click", function(){
-  box.style.opacity = "0.5";
+document.getElementById("fadeOut").addEventListener("click", function(){
+  opaque = opaque - 0.1;
+  box.style.opacity = opaque;
+});
+
+document.getElementById("fadeIn").addEventListener("click", function(){
+  opaque = opaque + 0.1
+  box.style.opacity = opaque;
 });
 
 document.getElementById("reset").addEventListener("click", function(){
@@ -34,6 +49,9 @@ document.getElementById("reset").addEventListener("click", function(){
   box.style.backgroundColor = "orange";
   box.style.opacity = "1.0";
   size = 250;
+  opaque = 1.0;
+  i = 5;
+  p.innerHTML = colors[i];
 });
 
 function bigger()
