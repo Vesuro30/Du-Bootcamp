@@ -2,8 +2,8 @@
   var box = document.getElementById("box");
   var p = document.getElementById("color-identifier");
   var opaque = 1.0;
-  var colors = ["Blue", "Green", "Red", "Black", "Orange", "Peru", "Aqua", "Lime", "Purple", "Gold"];
-  var i = 5;
+  //var colors = ["Blue", "Green", "Red", "Black", "Orange", "Peru", "Aqua", "Lime", "Purple", "Gold"];
+  //var i = 5;
   //p.innerHTML = colors[i];
 
 
@@ -26,35 +26,39 @@ document.getElementById("grow").addEventListener("click", bigger);
 //}); 
 
 
-document.getElementById("color").addEventListener("click", function(){
+/* document.getElementById("color").addEventListener("click", function(){
   i = Math.floor(Math.random() * 10); 
   console.log(i);
-  box.style.backgroundColor = colors[i];
-  //p.innerHTML = colors[i];
-});
+  box.style.backgroundColor = colors[i]; 
+  p.innerHTML = colors[i];
+});*/
 
 document.getElementById("randomColor").addEventListener("click", function(){
   box.style.backgroundColor = generateRandomColor();
 });
 
 document.getElementById("fadeOut").addEventListener("click", function(){
-  opaque = opaque - 0.1;
-  box.style.opacity = opaque;
+  if(opaque > 0){
+    opaque = opaque - 0.1;
+    box.style.opacity = opaque;
+}
 });
 
 document.getElementById("fadeIn").addEventListener("click", function(){
-  opaque = opaque + 0.1
-  box.style.opacity = opaque;
+  if(opaque < 1){
+    opaque = opaque + 0.1
+    box.style.opacity = opaque;  
+  }
 });
 
 document.getElementById("reset").addEventListener("click", function(){
   box.style.height = "150px"; 
   box.style.width = "150px";
-  box.style.backgroundColor = "orange";
+  box.style.backgroundColor = generateRandomColor();
   box.style.opacity = "1.0";
   size = 250;
   opaque = 1.0;
-  i = 5;
+  //i = 5;
   //p.innerHTML = colors[i];
 });
 
