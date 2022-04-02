@@ -4,31 +4,34 @@
   var opaque = 1.0;
   var maxup = 750;
   var maxdn = 15;
+  //  Needed for original random color mechanism
   //var colors = ["Blue", "Green", "Red", "Black", "Orange", "Peru", "Aqua", "Lime", "Purple", "Gold"];
   //var i = 5;
   //p.innerHTML = colors[i];
 
-
-box.addEventListener("wheel", function(event){
+        //Install wheel event handler while hovering over the box
+box.addEventListener("wheel", function(event){  
   if(event.deltaY < 0){
     resize("up");
   } else{
       resize("down");
-  }
-
+    }
 });
 
- document.getElementById("grow").addEventListener("click", function(){
+        //Install click handler on grow button
+ document.getElementById("grow").addEventListener("click", function(){  
   /*size = size * 1.25; */
   resize("up");
 /*box.style.height = size+"px"; 
   box.style.width = box.style.height; */
 }); 
 
-document.getElementById("shrink").addEventListener("click", function(){
+        // Install click handler on shrink button
+document.getElementById("shrink").addEventListener("click", function(){  
   resize("down");
 });
 
+        //Original random color mechanism
 /* document.getElementById("color").addEventListener("click", function(){
   i = Math.floor(Math.random() * 10); 
   console.log(i);
@@ -36,11 +39,13 @@ document.getElementById("shrink").addEventListener("click", function(){
   p.innerHTML = colors[i];
 });*/
 
-document.getElementById("randomColor").addEventListener("click", function(){
+        // Install click handler on random color button
+document.getElementById("randomColor").addEventListener("click", function(){ 
   box.style.backgroundColor = generateRandomColor();
 });
 
-document.getElementById("fadeOut").addEventListener("click", function(){
+        // Install click handler on fade out button
+document.getElementById("fadeOut").addEventListener("click", function(){  
   if(opaque > 0.09){
     opaque = opaque - 0.05;
     box.style.opacity = opaque;  
@@ -50,7 +55,8 @@ document.getElementById("fadeOut").addEventListener("click", function(){
     }   
 });
 
-document.getElementById("fadeIn").addEventListener("click", function(){
+        // Install click handler on fade in button
+document.getElementById("fadeIn").addEventListener("click", function(){  
   if(opaque < 1){
     opaque = opaque + 0.05
     box.style.opacity = opaque;  
@@ -60,7 +66,8 @@ document.getElementById("fadeIn").addEventListener("click", function(){
     } 
 });
 
-document.getElementById("reset").addEventListener("click", function(){
+        //// Install click handler on reset button
+document.getElementById("reset").addEventListener("click", function(){  
   box.style.height = "150px"; 
   box.style.width = "150px";
   box.style.backgroundColor = generateRandomColor();
@@ -71,7 +78,8 @@ document.getElementById("reset").addEventListener("click", function(){
   //p.innerHTML = colors[i];
 });
  
-  function generateRandomColor(){
+        // Function to generate a random color via hex code
+  function generateRandomColor(){   
     let maxVal = 0xFFFFFF; // 16,777,215 Different colors!
     let randomNumber = Math.random() * maxVal; 
     randomNumber = Math.floor(randomNumber);
@@ -80,7 +88,8 @@ document.getElementById("reset").addEventListener("click", function(){
     return "#"+randColor.toUpperCase();
  };
 
-function resize(direction)
+        //  Function to handle the resizing of the box
+function resize(direction)    
 {
   if(direction == "up"){
     if(size < maxup){
@@ -88,15 +97,15 @@ function resize(direction)
     } 
     else {
           alert("The box cannot grow larger!");
-    }   
+        }    
     } 
   else {
       if(size > maxdn){
         size = size / 1.25;
-    } 
+      }  
       else {
           alert("The box is too small already!");
-    }
+        }
   }
   box.style.height = size+"px"; 
   box.style.width = box.style.height;
