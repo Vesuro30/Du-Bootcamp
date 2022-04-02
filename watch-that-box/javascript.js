@@ -1,7 +1,9 @@
-  var size = 250;
+  var size = 150;
   var box = document.getElementById("box");
   var p = document.getElementById("color-identifier");
   var opaque = 1.0;
+  var maxup = 750;
+  var maxdn = 15;
   //var colors = ["Blue", "Green", "Red", "Black", "Orange", "Peru", "Aqua", "Lime", "Purple", "Gold"];
   //var i = 5;
   //p.innerHTML = colors[i];
@@ -9,22 +11,27 @@
 
 box.addEventListener("wheel", function(event){
   if(event.deltaY < 0){
-    size = size * 1.25;
+    resize("up");
   } else{
-      size = size / 1.25;
+      resize("down");
   }
-  box.style.height = size+"px"; 
-  box.style.width = size+"px";
+
 });
 
-document.getElementById("grow").addEventListener("click", bigger);
 
-//document.getElementById("grow").addEventListener("click", function(){
-  //box.style.height = size+"px"; 
- // box.style.width = size+"px";
- //size = size * 1.25;
-//}); 
 
+/* document.getElementById("grow").addEventListener("click", bigger); */
+
+ document.getElementById("grow").addEventListener("click", function(){
+  /*size = size * 1.25; */
+  resize("up");
+/*box.style.height = size+"px"; 
+  box.style.width = box.style.height; */
+}); 
+
+document.getElementById("shrink").addEventListener("click", function(){
+  resize("down");
+});
 
 /* document.getElementById("color").addEventListener("click", function(){
   i = Math.floor(Math.random() * 10); 
@@ -40,8 +47,9 @@ document.getElementById("randomColor").addEventListener("click", function(){
 document.getElementById("fadeOut").addEventListener("click", function(){
   if(opaque > 0){
     opaque = opaque - 0.1;
-    box.style.opacity = opaque;
-}
+    box.style.opacity = opaque;  
+}     
+  else { alert("You cannot fade out further!"); }   
 });
 
 document.getElementById("fadeIn").addEventListener("click", function(){
@@ -49,6 +57,7 @@ document.getElementById("fadeIn").addEventListener("click", function(){
     opaque = opaque + 0.1
     box.style.opacity = opaque;  
   }
+    else {alert("The box has reached its full opacity!");}
 });
 
 document.getElementById("reset").addEventListener("click", function(){
@@ -61,14 +70,6 @@ document.getElementById("reset").addEventListener("click", function(){
   //i = 5;
   //p.innerHTML = colors[i];
 });
-
-function bigger()
-{
-  box.style.height = size+"px"; 
-  box.style.width = size+"px";
-  size = size * 1.25;    
-  };
-
  
   function generateRandomColor(){
     let maxVal = 0xFFFFFF; // 16777215
@@ -79,4 +80,25 @@ function bigger()
     return "#"+randColor.toUpperCase();
   }
 
+function resize(direction)
+{
+  if(direction == "up"){
+    if(size < maxup){
+      size = size * 1.25;
+    } 
+      else {
+          alert("The box cannot grow larger!");
+    }   
+    } 
+    else {
+      if(size > maxdn){
+        size = size / 1.25;
+    } 
+        else {
+            alert("The box is too small already!");
+    }
+  }
+  box.style.height = size+"px"; 
+  box.style.width = box.style.height;
+};
 
