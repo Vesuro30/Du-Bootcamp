@@ -2,7 +2,7 @@
   var box = document.getElementById("box");
   var p = document.getElementById("color-identifier");
   var opaque = 1.0;
-  var maxup = 1000;
+  var maxup = 750;
   var maxdn = 15;
   //var colors = ["Blue", "Green", "Red", "Black", "Orange", "Peru", "Aqua", "Lime", "Purple", "Gold"];
   //var i = 5;
