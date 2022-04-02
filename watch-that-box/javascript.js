@@ -41,19 +41,23 @@ document.getElementById("randomColor").addEventListener("click", function(){
 });
 
 document.getElementById("fadeOut").addEventListener("click", function(){
-  if(opaque > 0.2){
-    opaque = opaque - 0.1;
+  if(opaque > 0.09){
+    opaque = opaque - 0.05;
     box.style.opacity = opaque;  
 }     
-  else { alert("You cannot fade out further!"); }   
+  else { 
+    alert("You cannot fade out further!");
+    }   
 });
 
 document.getElementById("fadeIn").addEventListener("click", function(){
   if(opaque < 1){
-    opaque = opaque + 0.1
+    opaque = opaque + 0.05
     box.style.opacity = opaque;  
-  }
-    else {alert("The box has reached its full opacity!");}
+}  
+  else {
+    alert("The box has reached its full opacity!");
+    } 
 });
 
 document.getElementById("reset").addEventListener("click", function(){
