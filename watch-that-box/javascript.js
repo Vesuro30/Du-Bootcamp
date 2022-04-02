@@ -2,7 +2,7 @@
   var box = document.getElementById("box");
   var p = document.getElementById("color-identifier");
   var opaque = 1.0;
-  var maxup = 750;
+  var maxup = 1000;
   var maxdn = 15;
   //var colors = ["Blue", "Green", "Red", "Black", "Orange", "Peru", "Aqua", "Lime", "Purple", "Gold"];
   //var i = 5;
@@ -41,7 +41,7 @@ document.getElementById("randomColor").addEventListener("click", function(){
 });
 
 document.getElementById("fadeOut").addEventListener("click", function(){
-  if(opaque > 0){
+  if(opaque > 0.2){
     opaque = opaque - 0.1;
     box.style.opacity = opaque;  
 }     
