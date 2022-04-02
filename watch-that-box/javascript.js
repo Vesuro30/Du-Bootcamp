@@ -61,7 +61,7 @@ document.getElementById("reset").addEventListener("click", function(){
   box.style.width = "150px";
   box.style.backgroundColor = generateRandomColor();
   box.style.opacity = "1.0";
-  size = 250;
+  size = 150;
   opaque = 1.0;
   //i = 5;
   //p.innerHTML = colors[i];
@@ -82,16 +82,16 @@ function resize(direction)
     if(size < maxup){
       size = size * 1.25;
     } 
-      else {
+    else {
           alert("The box cannot grow larger!");
     }   
     } 
-    else {
+  else {
       if(size > maxdn){
         size = size / 1.25;
     } 
-        else {
-            alert("The box is too small already!");
+      else {
+          alert("The box is too small already!");
     }
   }
   box.style.height = size+"px"; 
