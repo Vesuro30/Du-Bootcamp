@@ -18,10 +18,6 @@ box.addEventListener("wheel", function(event){
 
 });
 
-
-
-/* document.getElementById("grow").addEventListener("click", bigger); */
-
  document.getElementById("grow").addEventListener("click", function(){
   /*size = size * 1.25; */
   resize("up");
@@ -78,7 +74,7 @@ document.getElementById("reset").addEventListener("click", function(){
     randomNumber = randomNumber.toString(16);
     let randColor = randomNumber.padStart(6, 0);   
     return "#"+randColor.toUpperCase();
-  }
+  };
 
 function resize(direction)
 {
