@@ -68,13 +68,13 @@ document.getElementById("reset").addEventListener("click", function(){
 });
  
   function generateRandomColor(){
-    let maxVal = 0xFFFFFF; // 16777215
+    let maxVal = 0xFFFFFF; // 16,777,215 Different colors!
     let randomNumber = Math.random() * maxVal; 
     randomNumber = Math.floor(randomNumber);
     randomNumber = randomNumber.toString(16);
     let randColor = randomNumber.padStart(6, 0);   
     return "#"+randColor.toUpperCase();
-  };
+ };
 
 function resize(direction)
 {
