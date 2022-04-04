@@ -4,7 +4,7 @@
   var opaque = 1.0;
   var maxup = 750;
   var maxdn = 15;
-  //  Needed for original random color mechanism
+  //  Needed for original random color mechanism - no longer part of working code.
   //var colors = ["Blue", "Green", "Red", "Black", "Orange", "Peru", "Aqua", "Lime", "Purple", "Gold"];
   //var i = 5;
   //p.innerHTML = colors[i];
