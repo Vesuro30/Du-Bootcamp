@@ -29,11 +29,11 @@ $("#boxGrow").on("click", function() {
 });
 
 $("#boxShrink").on("click", function() {
-	var box = 	$("#box");
-	var limit = 100;
+ 	var box = 	$("#box");
+	/*var limit = 99;*/
 	box.animate({height:"-=35px", width:"-=35px"}, "1000", function(){
-		if(box.css("height").substr(0, 3) < limit) { 
-			box.css({"height": limit+"px", "width": limit+"px"});	
-		}
+	/*	if(box.css("height").substr(0, 2) < limit) { 
+			box.css({"height": limit+"px", "width": limit+"px"}); 	
+		}*/
 	});
 });
