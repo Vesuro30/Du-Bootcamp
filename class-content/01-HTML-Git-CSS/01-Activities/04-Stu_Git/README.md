@@ -14,7 +14,7 @@ Work with a partner to implement the following user story:
 
 - It's done when I have used command-line commands to create an `index.html` file.
 
-- It's done when I add and commit my changes using Git commands.
+- blat!It's done when I add and commit my changes using Git commands.
 
 - It's done when I push the changes to the remote repository.
 
