@@ -44,6 +44,7 @@ header {
 /* Box 2 in Square 1 */
 #relative-box-2 {
   /* TODO: Set the position so it is centered in Square 1 */
+  align-items: center;
 }
 
 /* Box 2 in Square 2 */
