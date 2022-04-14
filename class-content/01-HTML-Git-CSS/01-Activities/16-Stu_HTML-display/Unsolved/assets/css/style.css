@@ -17,6 +17,7 @@ li {
   /* TODO: Add your code here */
   list-style-type: none;
   font-size: 40px;
+  display: inline;
 }
 
 /* Boxes */
@@ -28,7 +29,7 @@ img {
 
 li{
   display: inline;
-  margin: 0;
+
 }
 #item-1 {
   background-color: #e0115f;
@@ -43,8 +44,3 @@ li{
   background-color: #999900;
 }
 
-/* Box 3 */
-#image-3 {
-  /* TODO: Add your code here */
-  display: block;
-}
