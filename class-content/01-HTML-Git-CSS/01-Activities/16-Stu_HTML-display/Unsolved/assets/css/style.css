@@ -22,11 +22,17 @@ li {
 /* Boxes */
 img {
   /* TODO: Add your code here */
-  margin: 0 auto;
+  margin: 0 auto 0;
+  display: block;
 }
 
+li{
+  display: inline;
+  margin: 0;
+}
 #item-1 {
   background-color: #e0115f;
+  text-align: center;
 }
 
 #item-2 {
@@ -40,5 +46,5 @@ img {
 /* Box 3 */
 #image-3 {
   /* TODO: Add your code here */
-  display: none;
+  display: block;
 }
