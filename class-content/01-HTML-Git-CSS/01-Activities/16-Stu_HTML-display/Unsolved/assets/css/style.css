@@ -17,6 +17,7 @@ li {
   /* TODO: Add your code here */
   list-style-type: none;
   font-size: 40px;
+  display: inline;
 }
 
 /* Boxes */
