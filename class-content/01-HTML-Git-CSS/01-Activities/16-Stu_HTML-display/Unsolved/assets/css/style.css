@@ -17,23 +17,16 @@ li {
   /* TODO: Add your code here */
   list-style-type: none;
   font-size: 40px;
-  display: inline;
 }
 
 /* Boxes */
 img {
   /* TODO: Add your code here */
-  margin: 0 auto 0;
-  display: block;
+  margin: 0 auto;
 }
 
-li{
-  display: inline;
-
-}
 #item-1 {
   background-color: #e0115f;
-  text-align: center;
 }
 
 #item-2 {
@@ -44,3 +37,8 @@ li{
   background-color: #999900;
 }
 
+/* Box 3 */
+#image-3 {
+  /* TODO: Add your code here */
+  display: none;
+}
