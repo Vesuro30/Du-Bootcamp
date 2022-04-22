@@ -4,35 +4,35 @@
 
 There are two types of Challenges in this course. Each one is designed to prepare you for a scenario that you're likely to encounter as a web developer.
 
-### Challenge Types 
+### Challenge Types
 
 The two types of Challenges are the following:
 
-* **On-the-job ticket** or **feature request Challenges** give you starter code in a folder called `Develop`, which you'll modify to complete the Challenge. Odd-numbered modules follow this format.
+- **On-the-job ticket** or **feature request Challenges** give you starter code in a folder called `Develop`, which you'll modify to complete the Challenge. Odd-numbered modules follow this format.
 
-* **Job-seeking coding assessments** or **take-home assignments** don't provide starter code. You'll build these from scratch. Even-numbered modules follow this format.
+- **Job-seeking coding assessments** or **take-home assignments** don't provide starter code. You'll build these from scratch. Even-numbered modules follow this format.
 
 ### Challenge Elements
 
-Challenges adhere to a format that's commonly used by software development teams that use **agile project management** to manage their work. Practicing this will prepare you for the workflows you'll experience as a professional full-stack web developer. 
+Challenges adhere to a format that's commonly used by software development teams that use **agile project management** to manage their work. Practicing this will prepare you for the workflows you'll experience as a professional full-stack web developer.
 
 > **Deep Dive**: To learn more about agile, read this [Wikipedia article on agile software development](https://en.wikipedia.org/wiki/Agile_software_development).
 
 Each Challenge contains the following elements:
 
-* **User Story**: This is a short, simple description of a feature told from the perspective of the person who is requesting the new capability, usually a user or customer of the system. This follows an AS AN / I WANT / SO THAT format. For example, "AS A shopper visiting an online store, I WANT to place items in a shopping cart, SO THAT I can purchase them." 
+- **User Story**: This is a short, simple description of a feature told from the perspective of the person who is requesting the new capability, usually a user or customer of the system. This follows an AS AN / I WANT / SO THAT format. For example, "AS A shopper visiting an online store, I WANT to place items in a shopping cart, SO THAT I can purchase them."
 
-* **Acceptance Criteria**: These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called **scenario-oriented criteria** which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of Challenges. 
+- **Acceptance Criteria**: These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called **scenario-oriented criteria** which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of Challenges.
 
-* **Mock-up**: This is an image or animation that demonstrates the design and functionality of the web application that you'll build for the Challenge.
+- **Mock-up**: This is an image or animation that demonstrates the design and functionality of the web application that you'll build for the Challenge.
 
-* **Submission**: You'll submit your completed Challenge for review. In the real world, when a developer finishes working on a project, another developer reviews the code, providing feedback on errors and making sure that all of the acceptance criteria have been met. For each Challenge, your instructional staff will serve as your team of reviewers.
+- **Submission**: You'll submit your completed Challenge for review. In the real world, when a developer finishes working on a project, another developer reviews the code, providing feedback on errors and making sure that all of the acceptance criteria have been met. For each Challenge, your instructional staff will serve as your team of reviewers.
 
 ## Your Task
 
-This week is an odd-numbered week, so your Challenge is an on-the-job ticket&mdash;meaning that you'll begin with starter code that you need to modify. 
+This week is an odd-numbered week, so your Challenge is an on-the-job ticket&mdash;meaning that you'll begin with starter code that you need to modify.
 
-**Refactoring** existing code (improving it without changing what it does) to meet a certain set of standards or to implement a new technology is a common task for front-end and junior developers. For this particular Challenge, a marketing agency has hired you to refactor an existing site to make it more accessible. 
+**Refactoring** existing code (improving it without changing what it does) to meet a certain set of standards or to implement a new technology is a common task for front-end and junior developers. For this particular Challenge, a marketing agency has hired you to refactor an existing site to make it more accessible.
 
 > **Important**: When working with someone else's code, you should adhere to the **Scout Rule**&mdash;always leave the code a little cleaner than when you found it.
 
@@ -100,59 +100,88 @@ Be sure to add, commit, and push your work to see the most up-to-date version of
 
 > **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
 >
-> * A repository that has no code
+> - A repository that has no code
 >
-> * A repository that includes a unique name but nothing else
+> - A repository that includes a unique name but nothing else
 >
-> * A repository that includes only a README file but nothing else
+> - A repository that includes only a README file but nothing else
 >
-> * A repository that only includes starter code
+> - A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
+This Challenge is graded based on the following criteria:
 
 ### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria plus the following code improvements:
+- Satisfies all of the preceding acceptance criteria plus the following code improvements:
 
-  * Application's links all function correctly.
+  - Application's links all function correctly.
 
-  * Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
+  - Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
 
-  * Application's CSS file is properly commented.
+  - Application's CSS file is properly commented.
 
 ### Deployment: 32%
 
-* Application deployed at live URL.
+- Application deployed at live URL.
 
-* Application loads with no errors.
+- Application loads with no errors.
 
-* Application GitHub URL submitted.
+- Application GitHub URL submitted.
 
-* GitHub repository contains application code.
+- GitHub repository contains application code.
 
 ### Application Quality: 15%
 
-* Application resembles mock-up provided in the Challenge instructions (at least 90%).
+- Application resembles mock-up provided in the Challenge instructions (at least 90%).
 
 ### Repository Quality: 13%
 
-* Repository has a unique name.
+- Repository has a unique name.
 
-* Repository follows best practices for file structure and naming conventions.
+- Repository follows best practices for file structure and naming conventions.
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-* Repository contains multiple descriptive commit messages.
+- Repository contains multiple descriptive commit messages.
 
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+- Repository contains quality README file with description, screenshot, and link to deployed application.
 
 ## Review
 
 You are required to submit the following for review:
 
-* The URL of the deployed application.
+- The URL of the deployed application.
 
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
+- The URL of the GitHub repository, with a unique name and a README that describes the project.
 
 ---
+
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+**\*\*\*\***\*\*\*\***\*\*\*\*** Changes made for the challenge **\*\*\*\***\***\*\*\*\***
+
+\***\*\*\*\*\***\*\***\*\*\*\*\*** HTML Changes \***\*\*\*\*\***\*\*\*\***\*\*\*\*\***
+
+1.  Changed title from "website" to "First Challenge"
+2.  added <header> tags in place of <div> tags with header class
+3.  added <section> tags to replace <div> tags
+4.  added <aside> tags to replace <div> tags as that portion of code is off to one side
+5.  added <footer> tags to replace <div> tags with footer class
+6.  Changed <h2> in footer to <h4> as the <h2> was out of order
+7.  added ID to "search-engine-optimization" (in place of class) to allow the link a the top of the page to work properly
+8.  Removed classes (as there are now ID's for all of them) from search-engine-optimization, social-media-marketing, online-reputation-management
+
+**\*\*\*\***\*\*\*\***\*\*\*\*** CSS changes \***\*\*\*\*\*\*\***\*\***\*\*\*\*\*\*\***
+
+1.  Removed class designations from all <header> elements as this was changed in the HTML
+2.  Removed all class designations from search-engine-optimization, social-media-marketing, online-reputation-management, their <img> tags and <h2> tags
+3.  Removed all .header ul and li elements from CSS and replaced with simply li, as there is only one list to contend with on this page
+4.  Changed .benefits to aside to style <aside> tag as this was changed in the HTML
+5.  Condensed .benefit-lead .benefit-cost and .benefit-brand to one line using "," to separate each class
+6.  Condensed .benefit-lead h3 .benefit-cost h3 and .benefit-brand h3 to one line using "," to separate each class
+7.  Condensed .benefit-lead img .benefit-cost img and .benefit-brand img to one line using "," to separate each class
+8.  Condensed .search-engine-optimization, .social-media-marketing, .online-reputation-management (and changed from class selectors to ID selectors using #) to one line so it now reads #search-engine-optimization, #social-media-marketing, #online-reputation-management{
+9.  Condensed .search-engine-optimization img, .social-media-marketing img, .online-reputation-management img (and changed from class selectors to ID selectors using #) to one line so it now reads #search-engine-optimization img, #social-media-marketing img, #online-reputation-management img{
+10. Condensed .search-engine-optimization h2, .social-media-marketing h2, .online-reputation-management h2 (and changed from class selectors to ID selectors using #) to one line so it now reads #search-engine-optimization h2, #social-media-marketing h2, #online-reputation-management h2{
+11. Removed class designation from <footer> element as this was changed in the HTML
+12. Changed footer h2 to footer h4 as we changed the heading class for semantic purposes in the HTML
